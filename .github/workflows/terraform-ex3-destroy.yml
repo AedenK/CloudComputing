@@ -39,8 +39,8 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       - name: Terraform Destroy
         if: github.ref == 'refs/heads/main'
-        uses: ./Exercices/Terraform/Ex3/.github/actions/terraform
+        uses: ./YnovCloudModule2026-main/Exercices/Terraform/Ex3/.github/actions/terraform
         with:
           environment: ${{ github.event.inputs.environment }}
           operation: destroy
-          working-directory: Exercices/Terraform/Ex3
+          working-directory: YnovCloudModule2026-main/Exercices/Terraform/Ex3
