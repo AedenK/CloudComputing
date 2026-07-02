@@ -4,12 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environnement a deployer (dev ou prod)'
+        description: 'Environnement a deployer (dev integration ou prod)'
         required: true
         default: 'dev'
         type: choice
         options:
           - dev
+          - integration
           - prod
 
 permissions:
